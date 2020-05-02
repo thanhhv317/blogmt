@@ -26,9 +26,6 @@ class Nav extends Component {
                         <NavLink className="nav-link" to="/about">About</NavLink>
                         </li>
                         <li className="nav-item">
-                        <NavLink className="nav-link" to="/post">Sample Post</NavLink>
-                        </li>
-                        <li className="nav-item">
                         <NavLink className="nav-link" to="/contact">Contact</NavLink>
                         </li>
                     </ul>

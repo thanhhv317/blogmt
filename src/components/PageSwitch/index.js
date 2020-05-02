@@ -7,10 +7,9 @@ import {
   } from "react-router-dom";
 import Home from './../Home';
 import About from './../About';
-import Post from './../Post';
 import Contact from './../Contact';
 import Header from '../Header';
-import PostHeader from './../PostHeader';
+import PostDetail from './../PostDetail';
 
 
 class PageSwitch extends Component {
@@ -19,19 +18,18 @@ class PageSwitch extends Component {
             <div>
                 <Switch>
                     <Route exact path="/">
-                        <Header/>
+                        <Header background="assets/img/home-bg.jpg" title="Clean Blog" content="A Blog Theme by Start Bootstrap"/>
                         <Home />
                     </Route>
                     <Route path="/about">
-                        <Header/>
+                        <Header background="assets/img/about-bg.jpg" title="About us" content="A Blog Theme by Start Bootstrap"/>
                         <About />
                     </Route>
-                    <Route path="/post">
-                        <PostHeader/>
-                        <Post />
+                    <Route path="/post/:slug" >
+                        <PostDetail/>
                     </Route>
                     <Route path="/contact">
-                        <Header/>
+                        <Header background="assets/img/contact-bg.jpg" title="Contact" content="A Blog Theme by Start Bootstrap"/>
                         <Contact />
                     </Route>
                 </Switch>
