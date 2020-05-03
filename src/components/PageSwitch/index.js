@@ -18,19 +18,15 @@ class PageSwitch extends Component {
             <div>
                 <Switch>
                     <Route exact path="/">
-                        <Header background="assets/img/home-bg.jpg" title="Clean Blog" content="A Blog Theme by Start Bootstrap"/>
+                        <Header background="assets/img/home-bg.jpg" title="BlogMT-javascript " content=""/>
                         <Home />
                     </Route>
                     <Route path="/about">
-                        <Header background="assets/img/about-bg.jpg" title="About us" content="A Blog Theme by Start Bootstrap"/>
+                        <Header background="assets/img/about-bg.jpg" title="About us" content=""/>
                         <About />
                     </Route>
                     <Route path="/post/:slug" >
                         <PostDetail/>
-                    </Route>
-                    <Route path="/contact">
-                        <Header background="assets/img/contact-bg.jpg" title="Contact" content="A Blog Theme by Start Bootstrap"/>
-                        <Contact />
                     </Route>
                 </Switch>
             </div>

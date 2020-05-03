@@ -18,9 +18,9 @@ class PostItem extends Component {
                 {this.props.sub_title}
                 </h3>
                 </a>
-                <p className="post-meta">Posted by
+                <p className="post-meta">Đăng bởi
                 <a href="javscript::void(0)"> {this.props.author} </a>
-                on {this.props.created_at}</p>
+                lúc {this.props.created_at}</p>
             </div>
             <hr />
             </div>

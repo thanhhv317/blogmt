@@ -6,13 +6,11 @@ import Post from './../Post';
 const PostDetail = (props) => {
     const { slug } = useParams();
     const [ data, setData ] = useState([]);
-    console.log(slug);
     useEffect(() => {
         fetch(`http://localhost:3000/posts/${slug}`)
         .then(res => res.json())
         .then(
             (result) => {
-                console.log(result);
                 const { data } = result;
                 setData(data)
 

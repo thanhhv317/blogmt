@@ -8,7 +8,7 @@ const Post = (props) => {
             <article>
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-12 col-md-12 mx-auto" dangerouslySetInnerHTML={{__html: content}} >
+                        <div className="col-lg-12 col-md-12 col-12 mx-auto" dangerouslySetInnerHTML={{__html: content}} >
                         </div>
                     </div>
                 </div>

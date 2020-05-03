@@ -26,7 +26,7 @@ class Footer extends Component {
                             </a>
                         </li>
                         <li className="list-inline-item">
-                            <a href="#">
+                            <a href="https://github.com/thanhhv317/blogmt">
                             <span className="fa-stack fa-lg">
                                 <i className="fas fa-circle fa-stack-2x" />
                                 <i className="fab fa-github fa-stack-1x fa-inverse" />
@@ -34,7 +34,7 @@ class Footer extends Component {
                             </a>
                         </li>
                         </ul>
-                        <p className="copyright text-muted">Copyright © Your Website 2019</p>
+                        <p className="copyright text-muted">Copyright © blogmt 2020</p>
                     </div>
                     </div>
                 </div>
