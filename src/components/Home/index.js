@@ -101,12 +101,16 @@ class Home extends Component {
                             <div className="col-lg-12 col-md-12 mx-auto">
                                 {items.map((item) => {
                                     return <PostItem
-                                    key={item._id}
-                                    title={item.title}
-                                    sub_title={item.preview}
-                                    author={item.author}
-                                    slug={item.slug}
-                                    created_at={item.createdDate} />
+                                    key = {item._id}
+                                    title = {item.title}
+                                    sub_title = {item.preview}
+                                    author = {item.author}
+                                    slug = {item.slug}
+                                    created_at = { 
+                                            item.createdDate.slice(0, 10).split("-").reverse().join("/")
+                                            .concat(' ')
+                                            .concat(item.createdDate.slice(11, 16))
+                                        } />
                                 })}
                                 {/* Pager */}
                                 <div className="clearfix">
