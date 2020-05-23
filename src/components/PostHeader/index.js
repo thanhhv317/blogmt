@@ -14,7 +14,12 @@ class PostHeader extends Component {
                         <h2 className="subheading"></h2>
                         <span className="meta">Đăng bởi
                             <a style={{cursor:"pointer"}}> {this.props.author} </a>
-                            lúc {this.props.createdDate}
+                            lúc {
+                            this.props.createdDate.slice(0, 10).split("-").reverse().join("/")
+                            .concat(' ')
+                            .concat(this.props.createdDate.slice(11, 16))
+                            
+                            }
                         </span>
                         </div>
                     </div>
